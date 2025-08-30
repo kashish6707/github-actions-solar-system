@@ -8,7 +8,7 @@ on:
       - 'feature/*'
 
 jobs:
-  unit-testing:
+  docker:
     name: Unit Testing
     runs-on: ubuntu-latest
     steps:
@@ -62,5 +62,6 @@ jobs:
           echo "kubectl returned $?"
           kubectl -n default get pod
           sleep 10
+
 
 
